@@ -16,8 +16,8 @@
             //print_r($this->getURL());
             $url = $this->getUrl();
             if(empty($this->getURL())){
-                // fix url[0] empty 
-                // redirect to index.php
+                $url[0] = ' '; 
+                
                 
             }else{
                 // look in controllers for first value
