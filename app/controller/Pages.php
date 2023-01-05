@@ -1,18 +1,15 @@
 <?php
-    class pages {
+    class Pages extends Controller{
         public function __construct(){
-           //echo 'this is pages';
+           
         }
             
         public function index(){
-            echo 'this is index';
+            $this->view('pages/index');
         }
 
-        public function About(){
-            echo 'this is about';
+        public function about(){
+            $this->view('pages/about');
 
-        }
-        public function More(){
-            echo 'this is more';
         }
     }
